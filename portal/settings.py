@@ -38,6 +38,9 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
 
+    # Third party Apps
+    'rest_framework',
+
     # My Apps
     'myapps.members.apps.MembersConfig'
 ]

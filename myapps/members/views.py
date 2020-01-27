@@ -1,6 +1,8 @@
-from django.shortcuts import render
+from rest_framework import viewsets
+from .models import User
+from .serializers import UserSerializer
 
 
-# Create your views here.
-def members(request):
-    return render(request, 'members/add_member.html', {'form':form})
+class UserViewSet(viewsets.ModelViewSet):
+    queryset = User.objects.all()
+    serializer_class = UserSerializer
