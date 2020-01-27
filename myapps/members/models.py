@@ -23,4 +23,4 @@ class UserProfile(models.Model):
     country = models.CharField(max_length=50)
     city = models.CharField(max_length=50)
     zip = models.CharField(max_length=5)
-    photo = models.ImageField(upload_to='uploads', blank=True)
+    photo = models.ImageField(upload_to='uploads/', blank=True, null=True)
